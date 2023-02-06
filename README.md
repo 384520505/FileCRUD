@@ -5,27 +5,26 @@
 
 # 使用
 
-- FileCRUD：
+## FileCRUD：
 - params： {fileName, type}, 
 - fileName:必填项，文件名称，需要带有文件类型后缀，eg: test.txt; 
 - type:选填项，文件存储类型，默认值为plus.io.PRIVATE_DOC，其他类型请参考，H5+App io章节中type解析
 
-- writeConToFile：
+## writeConToFile：
 - params：text
 - text：json对象数据类型，写入的文本内容，内容可以为空
 
-- readConOfFile：
+## readConOfFile：
 - params：measure，measure：undefined,读取json对象的中的所有内容； measure：['name'],只读取json对象中的name属性
 
-- updataConToFile：
+## updataConToFile：
 - params：{name:'zhangsan', age:18, sex:'nan'},将文件中的name、age、sex属性值更新，若源文件中没有sex属性，则添加sex属性
 
-- deletedConToFile：
+## deletedConToFile：
 - params：measure，measure：undefined,删除json对象的中的所有内容； measure：['name'],只删除json对象中的name属性
 
-- 下载插件
+### 引入插件
 - <script src='js/FileCRUD.js'></script>
-
 - 扩展 plusready API加载完毕后调用此插件的功能 
 ```javascript 
 	document.addEventListener( "plusready", function(){
